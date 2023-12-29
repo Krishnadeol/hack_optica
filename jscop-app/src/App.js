@@ -1,4 +1,6 @@
-
+import React from 'react'
+import ParticleRing from './components/ParticleRing'
+import Navbar from './components/Navbar'
 import { useEffect,useState } from 'react';
 import Spiral from './components/Spiral'
 function App() {
@@ -11,9 +13,11 @@ function App() {
     },8000)
   },[])
   return (
-  
     <>
-  {Load ? <Spiral /> : <h1>santa clause</h1>}
+  {Load ? <Spiral /> :  <div className='bg-[#10172a]'>
+    <Navbar/>
+     <ParticleRing/>
+    </div>}
     </>
   );
 }
