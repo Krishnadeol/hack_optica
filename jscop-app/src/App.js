@@ -1,14 +1,26 @@
-import React from 'react';
 
+import React from 'react'
+import ParticleRing from './components/ParticleRing'
+import Navbar from './components/Navbar'
+import MouseTrail from './components/MouseImageTrail';
 import TiltCard from './components/TiltCard'
 import HorizontalScrollCarousel from './components/HorizontalScrollCarousel'
-import ParticleRing from './components/ParticleRing';
-import Navbar from './components/Navbar';
-import MouseTrail from './components/MouseImageTrail';
+import { useEffect,useState } from 'react';
+import Spiral from './components/Spiral'
+
 
 function App() {
+
+  const[Load,setLod]=useState(false);
+  useEffect(()=>{
+    setLod(true);
+    setTimeout(()=>{
+    setLod(false);
+    },8000)
+  },[])
   return (
-    <div className='bg-[#10172a]'>
+    <>
+  {Load ? <Spiral /> :  <div className='bg-[#10172a]'>
     <Navbar/>
     <ParticleRing/>
     <TiltCard/>
