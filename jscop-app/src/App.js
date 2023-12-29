@@ -5,6 +5,7 @@ import HorizontalScrollCarousel from './components/HorizontalScrollCarousel'
 import ParticleRing from './components/ParticleRing';
 import Navbar from './components/Navbar';
 import MouseTrail from './components/MouseImageTrail';
+import TimeLine from './components/TimeLine'
 
 function App() {
   return (
@@ -12,9 +13,10 @@ function App() {
     <Navbar/>
     <ParticleRing/>
     <TiltCard/>
-    <div className='py-20 px-20'><MouseTrail/></div>
+    <TimeLine/>
     <HorizontalScrollCarousel/>
-    
+    <div className='py-20 px-20'><MouseTrail/></div>
+  
 
     </div>
   )
