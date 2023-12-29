@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <div className={`bg-[#211f39] sticky flex justify-between items-center h-16 max-w-[1240px] mx-auto px-4 text-white rounded-full  ${isScrolled ? 'fixed top-0 left-0 right-0 z-50' : ''}`}>
-      <img className='h-18 w-24 text-xl font-bold text-[#7167e2]' src='src/assets/logo.png' alt="Logo" />
+      <img className='h-18 w-24 text-xl font-bold text-[#7167e2]' src='src/assets/logo1.png' alt="Logo" />
 
       <ul className='hidden md:flex'>
         {navItems.map(item => (
