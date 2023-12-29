@@ -51,7 +51,7 @@ const ParticleRing = () => {
         <div className="flex flex-col items-center">
           <img
             className="w-72 md:w-96  text-slate-200 font-medium text-lg md:text-4xl pointer-events-none"
-            src="src/assets/logo.png"
+            src="src/assets/logo1.png"
             alt="Logo"
           />
           <h1 className="text-slate-200 text-3xl md:text-6xl pointer-events-none font-extrabold">

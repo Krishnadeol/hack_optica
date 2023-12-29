@@ -1,7 +1,6 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 
-
 const Example = () => {
   return (
     <div>
@@ -35,7 +34,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[400px] w-[300px] overflow-hidden flex flex-wrap gap-3 rounded-md bg-neutral-200"
+      className="group relative h-[300px] w-[300px] overflow-hidden flex flex-wrap gap-3 rounded-md bg-neutral-200"
     >
       <div
         style={{
@@ -45,10 +44,9 @@ const Card = ({ card }) => {
         }}
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
       ></div>
-      <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-          {card.title}
-        </p>
+      <div className="absolute inset-0 z-10 grid place-content-end p-4">
+        <p className="text-white text-2xl font-bold">{card.title}</p>
+        <p className="text-white text-lg">{card.postion}</p>
       </div>
     </div>
   );
@@ -56,40 +54,55 @@ const Card = ({ card }) => {
 
 export default Example;
 
+
+
 const cards = [
   {
-    url: 'src/assets/CCC.jpg',
-    title: "Title 1",
+    url: 'src/images/team1.jpeg',
+    title: "Naman Gupta",
+    postion:"Technical Head",
     id: 1,
   },
   {
-    url: "/imgs/abstract/2.jpg",
-    title: "Title 2",
+    url: 'src/images/team2.jpeg',
+    title: "Ronith Khatri",
+    postion:"Web Master",
     id: 2,
   },
   {
-    url: "/imgs/abstract/3.jpg",
-    title: "Title 3",
+    url: 'src/images/team3.jpeg',
+    title: "Harsh Sharma",
+    postion:"Techinical volunteer",
     id: 3,
   },
   {
-    url: "/imgs/abstract/4.jpg",
-    title: "Title 4",
+    url: 'src/images/team4.jpeg',
+    title: "Kavya Baranwal",
+    postion:"Techinical volunteer",
     id: 4,
   },
   {
-    url: "/imgs/abstract/5.jpg",
-    title: "Title 5",
+    url: 'src/images/team5.jpeg',
+    title: "Aryan Arora",
+    postion:"Techinical volunteer",
     id: 5,
   },
   {
-    url: "/imgs/abstract/6.jpg",
-    title: "Title 6",
+    url: 'src/images/team6.jpeg',
+    title: "Deepti Jain",
+    postion:"Techinical volunteer",
     id: 6,
   },
   {
-    url: "/imgs/abstract/7.jpg",
-    title: "Title 7",
+    url: 'src/images/team7.jpeg',
+    title: "Nancy Soni",
+    postion:"Techinical volunteer",
     id: 7,
+  },
+  {
+    url: 'src/images/team8.jpeg',
+    title: "Aryan Goyel",
+    postion:"Technical volunteer",
+    id: 8,
   },
 ];
